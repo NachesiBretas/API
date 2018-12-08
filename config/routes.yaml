@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+importXml:
+    path: /
+    defaults: { _controller: 'App\Controller\ImportController::processXml' }

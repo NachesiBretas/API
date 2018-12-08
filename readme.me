@@ -1,0 +1,32 @@
+
+Windows 7 environment
+
+
+To configuration it is necessary to:
+
+Install wampserver 3.1.4 setting php 7
+Install composer (by console or download it for windows)
+
+Create the project inside of wamp/www folder then install the components through composer:
+
+composer create-project symfony/skeleton API
+
+composer require symfony/serializer-pack
+composer require symfony/orm-pack
+composer require symfony/validator
+composer require symfony/form
+composer require friendsofsymfony/rest-bundle
+composer require annotation
+composer require cors
+composer require monolog
+//composer require server --dev
+//composer require symfony/maker-bundle --dev
+//composer require symfony/security-bundle
+
+composer require --dev profiler
+composer require --dev  web-server
+composer require --dev  maker
+
+
+
+PS.: the shiporders file had some tags without closure so I updated it.

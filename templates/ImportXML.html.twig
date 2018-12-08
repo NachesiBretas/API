@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="panel-body">
+        <div class="form-group">
+            <label class="col-md-3 control-label">Import XML</label>
+            <br><br>
+            {{ form_start(form) }}
+            {{ form_row(form.file) }}
+            <br>
+            <button type="submit">Process XML!</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+
+{% for message in app.flashes('notice') %}
+    <div class="flash-notice">
+        {{ message }}
+    </div>
+{% endfor %}
+
+
+
+
+
